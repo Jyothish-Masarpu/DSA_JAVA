@@ -17,7 +17,7 @@ public class BinarySearch {
         int right=arr.length-1;
         while(left<=right){
             steps++;
-            int mid=(left+right)/2;
+            int mid=left+(right-left)/2;
             if(arr[mid]==target){
                 System.out.println("Steps taken: "+steps);
                 return mid;
