@@ -1,6 +1,6 @@
 package Matrix;
 import java.util.Scanner;
-public class SumOfEachRow {
+public class MaxMinInMatrix {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter no. of rows: ");
@@ -15,12 +15,19 @@ public class SumOfEachRow {
             }
         }
         sc.close();
+        int max=Integer.MIN_VALUE;
+        int min=Integer.MAX_VALUE;
         for(int i=0;i<rows;i++){
-            int sum=0;
             for(int j=0;j<cols;j++){
-                sum+=matrix[i][j];
+                if(matrix[i][j]>max){
+                    max=matrix[i][j];
+                }
+                if(matrix[i][j]<min){
+                    min=matrix[i][j];
+                }
             }
-            System.out.println("Row "+i+" Sum: "+sum);
         }
+        System.out.println("Maximum element in the matrix: "+max);
+        System.out.println("Minimum element in the matrix: "+min);
     }
 }

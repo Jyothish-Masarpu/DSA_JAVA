@@ -1,6 +1,6 @@
 package Matrix;
 import java.util.Scanner;
-public class SumOfEachRow {
+public class SumOfEachColumn {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter no. of rows: ");
@@ -15,12 +15,12 @@ public class SumOfEachRow {
             }
         }
         sc.close();
-        for(int i=0;i<rows;i++){
+        for(int i=0;i<cols;i++){
             int sum=0;
-            for(int j=0;j<cols;j++){
-                sum+=matrix[i][j];
+            for(int j=0;j<rows;j++){
+                sum+=matrix[j][i];
             }
-            System.out.println("Row "+i+" Sum: "+sum);
+            System.out.println("Column "+i+" Sum: "+sum);
         }
     }
 }

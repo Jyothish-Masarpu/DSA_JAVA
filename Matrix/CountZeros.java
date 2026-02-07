@@ -1,6 +1,6 @@
 package Matrix;
 import java.util.Scanner;
-public class SumOfEachRow {
+public class CountZeros {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter no. of rows: ");
@@ -15,12 +15,13 @@ public class SumOfEachRow {
             }
         }
         sc.close();
+        int count=0;
         for(int i=0;i<rows;i++){
-            int sum=0;
             for(int j=0;j<cols;j++){
-                sum+=matrix[i][j];
+                if(matrix[i][j]==0){
+                    count++;
+                }
             }
-            System.out.println("Row "+i+" Sum: "+sum);
-        }
+        }System.out.println("Total number of zeros in the matrix: "+count);
     }
 }
