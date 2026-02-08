@@ -20,6 +20,7 @@ public class PrintRowWise {
             for(int j=0;j<cols;j++){
                 System.out.print(matrix[i][j]+" ");
             }
+                System.out.println();
         }
     }
 }
