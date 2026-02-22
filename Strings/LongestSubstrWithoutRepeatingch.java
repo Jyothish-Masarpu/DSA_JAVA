@@ -1,3 +1,7 @@
+/*
+Leetcode Problem: 3. Longest Substring Without Repeating Characters
+reference: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+*/
 package Strings;
 import java.util.HashMap;
 public class LongestSubstrWithoutRepeatingch {
