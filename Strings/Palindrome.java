@@ -5,6 +5,7 @@ public class Palindrome {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a string to check if it's a palindrome:");
         String s=sc.next();
+        sc.close();
         String reversed=new StringBuilder(s).reverse().toString();
         if(s.equals(reversed)){
             System.out.println("\""+s+"\" is a palindrome.");
