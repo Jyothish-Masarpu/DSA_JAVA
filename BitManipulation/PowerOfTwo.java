@@ -1,5 +1,5 @@
 package BitManipulation;
-public class PoweOfTwo {
+public class PowerOfTwo {
     public static void main(String[] args) {
         int n = 16;
         System.out.println("Is " + n + " a power of two? " + isPowerOfTwo(n));
