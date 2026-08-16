@@ -164,7 +164,7 @@ class SinglyLinkedList {
 		System.out.println("\nAfter deleting element at last: ");
 		list.disp();
 		list.deletekey(25);
-		System.out.println("\nAfter deleting element at position: ");
+		System.out.println("\nAfter deleting element 25: ");
 		list.disp();
 	}
 }
